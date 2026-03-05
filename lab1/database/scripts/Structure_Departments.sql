@@ -33,6 +33,10 @@ alter table DEPARTMENTS
 alter table DEPARTMENTS
   add constraint DEPT_MGR_FK foreign key (MANAGER_ID)
   references EMPLOYEES (EMPLOYEE_ID);
+-- Add EMPLOYEES.DEPARTMENT_ID -> DEPARTMENTS (resolves circular dependency)
+alter table EMPLOYEES
+  add constraint EMP_DEPT_FK foreign key (DEPARTMENT_ID)
+  references DEPARTMENTS (DEPARTMENT_ID);
 -- Create/Recreate check constraints 
 alter table DEPARTMENTS
   add constraint DEPT_NAME_NN

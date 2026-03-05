@@ -1,35 +1,37 @@
+-- Insert departments with manager_id = NULL first (EMPLOYEES not yet loaded).
+-- Run Data_Departments_Managers.sql after Data_Employees.sql to set manager_id.
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (10, 'Administration', 200, 1700);
+values (10, 'Administration', null, 1700);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (20, 'Marketing', 201, 1800);
+values (20, 'Marketing', null, 1800);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (30, 'Purchasing', 114, 1700);
+values (30, 'Purchasing', null, 1700);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (40, 'Human Resources', 203, 2400);
+values (40, 'Human Resources', null, 2400);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (50, 'Shipping', 121, 1500);
+values (50, 'Shipping', null, 1500);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (60, 'IT', 103, 1400);
+values (60, 'IT', null, 1400);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (70, 'Public Relations', 204, 2700);
+values (70, 'Public Relations', null, 2700);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (80, 'Sales', 145, 2500);
+values (80, 'Sales', null, 2500);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (90, 'Executive', 100, 1700);
+values (90, 'Executive', null, 1700);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (100, 'Finance', 108, 1700);
+values (100, 'Finance', null, 1700);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
-values (110, 'Accounting', 205, 1700);
+values (110, 'Accounting', null, 1700);
 
 insert into Departments (DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID)
 values (120, 'Treasury', null, 1700);

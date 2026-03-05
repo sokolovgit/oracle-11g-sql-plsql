@@ -58,9 +58,7 @@ alter index EMP_EMP_ID_PK nologging;
 alter table EMPLOYEES
   add constraint EMP_EMAIL_UK unique (EMAIL);
 alter index EMP_EMAIL_UK nologging;
-alter table EMPLOYEES
-  add constraint EMP_DEPT_FK foreign key (DEPARTMENT_ID)
-  references DEPARTMENTS (DEPARTMENT_ID);
+-- EMP_DEPT_FK added in Structure_Departments.sql (circular dependency: DEPARTMENTS references EMPLOYEES)
 alter table EMPLOYEES
   add constraint EMP_JOB_FK foreign key (JOB_ID)
   references JOBS (JOB_ID);
